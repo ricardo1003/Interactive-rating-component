@@ -11,7 +11,7 @@ body{
     color: white;
     font-family: "Overpass";
 }
-.rate{
+.rate, .gratitude{
     padding: 1.5rem;
     border-radius: 1rem;
     background: rgb(35,44,53);
@@ -40,7 +40,7 @@ body{
 .rate h1, .ratingButton{
     font-weight: 700;
 }
-.rate p, .ratingButton{
+.rate p, .ratingButton, .gratitude p{
     color: hsl(217, 12%, 63%);
 }
 .rate div{
@@ -53,8 +53,16 @@ body{
 }
 .ratingButton{
     background-color: hsl(213, 19%, 18%);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
 }
-
+.ratingButton:hover{
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(216, 12%, 8%);
+}
 .submit{
     width: 100%;
     height: 45px;
@@ -74,9 +82,33 @@ body{
     display: none;
 }
 
-
-
-
+.gratitude{
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+.gratitude img{
+    display: block;
+    margin: 0 auto;
+}
+.gratitude section :first-child{
+    height: 2.5rem;
+    width: 13rem;
+    margin: 1.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.gratitude section h1{
+    font-size: 1.5rem;
+    margin: 0;
+}
 
 
 
