@@ -78,9 +78,6 @@ body{
     -o-border-radius: 100px;
 }
 
-.no-display{
-    display: none;
-}
 
 .gratitude{
     padding: 2rem 1.5rem;
@@ -110,6 +107,9 @@ body{
     margin: 0;
 }
 
+.no-display{
+    display: none;
+}
 
 
 
