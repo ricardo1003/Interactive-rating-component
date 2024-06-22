@@ -1,0 +1,100 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: hsl(216, 12%, 8%);
+    font-size: 15px;
+    color: white;
+    font-family: "Overpass";
+}
+.rate{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background: rgb(35,44,53);
+    background: radial-gradient(circle at center top, rgba(35,44,53,1) 0%, rgba(23,30,38,1) 50%);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+
+.rate .logo, .ratingButton{
+    width: 45px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.rate .logo{
+    display: block;
+    background: hsl(213, 19%, 18%) url("../images/icon-star.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rate h1, .ratingButton{
+    font-weight: 700;
+}
+.rate p, .ratingButton{
+    color: hsl(217, 12%, 63%);
+}
+.rate div{
+    margin: 2rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.ratingButton, .submit{
+    border: none;
+}
+.ratingButton{
+    background-color: hsl(213, 19%, 18%);
+}
+
+.submit{
+    width: 100%;
+    height: 45px;
+    border-radius: 100px;
+    background-color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: hsl(216, 12%, 8%);
+
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.no-display{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
