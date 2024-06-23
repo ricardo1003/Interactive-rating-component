@@ -4,12 +4,16 @@ body{
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     box-sizing: border-box;
     background-color: hsl(216, 12%, 8%);
     font-size: 15px;
     color: white;
     font-family: "Overpass";
+}
+.rate{
+    max-width: 343.2px;
 }
 .rate, .gratitude{
     padding: 1.5rem;
@@ -22,7 +26,7 @@ body{
     -o-border-radius: 1rem;
 }
 
-.rate .logo, .ratingButton{
+.rate .logo, .ratingButton, .ratingButton-clicked{
     width: 45px;
     aspect-ratio: 1/1;
     border-radius: 100px;
@@ -37,7 +41,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
-.rate h1, .ratingButton{
+.rate h1, .ratingButton, .ratingButton-clicked{
     font-weight: 700;
 }
 .rate p, .ratingButton, .gratitude p{
@@ -48,16 +52,18 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.ratingButton, .submit{
+.ratingButton,.ratingButton-clicked, .submit{
     border: none;
 }
-.ratingButton{
-    background-color: hsl(213, 19%, 18%);
+.ratingButton,.ratingButton-clicked, .submit{
     transition: 0.2s;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -ms-transition: 0.2s;
     -o-transition: 0.2s;
+}
+.ratingButton{
+    background-color: hsl(213, 19%, 18%);
 }
 .ratingButton:hover{
     background-color: hsl(25, 97%, 53%);
@@ -71,13 +77,14 @@ body{
     font-weight: 700;
     letter-spacing: 2px;
     color: hsl(216, 12%, 8%);
-
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     -ms-border-radius: 100px;
     -o-border-radius: 100px;
 }
-
+.submit:hover{
+    background-color: white;
+}
 
 .gratitude{
     padding: 2rem 1.5rem;
@@ -111,7 +118,10 @@ body{
     display: none;
 }
 
-
+.ratingButton-clicked{
+    background-color: #fff;
+    color: hsl(213, 19%, 18%);
+}
 
 
 
