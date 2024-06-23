@@ -12,7 +12,7 @@ body{
     color: white;
     font-family: "Overpass";
 }
-.rate{
+.rate, .gratitude{
     max-width: 343.2px;
 }
 .rate, .gratitude{
